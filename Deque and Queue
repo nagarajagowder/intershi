@@ -1,0 +1,16 @@
+from queue import Queue
+
+q = Queue(maxsize=3)
+print(q.qsize())
+q.put('a')
+q.put('b')
+q.put('c')
+print("\nfull: ", q.full())
+print("\nelements dequeued from queue")
+print(q.get())
+print(q.get())
+print(q.get())
+print("\nempty: ", q.empty())
+q.put(1)
+print("\nempty: ", q.empty())
+print("full: ", q.full())
